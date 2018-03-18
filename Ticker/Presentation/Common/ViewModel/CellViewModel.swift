@@ -9,16 +9,6 @@
 import Foundation
 
 
-protocol CellViewModelType: ViewModelType {
-}
-
-extension CellViewModelType {
-    
-    static func className() -> String {
-        return String(describing: self)
-    }
-}
-
-class CellViewModel: ViewModel, CellViewModelType {
+class CellViewModel: ViewModel {
     
 }

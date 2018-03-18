@@ -7,19 +7,22 @@
 //
 
 import RxSwift
-import ObservableArray_RxSwift
+import RxDataSources
 
 
-class TickerViewModel: CellArrayViewModel<QuotationCellViewModel> {
+class TickerViewModel: ViewModel {
     
     private let interactor = TickerInteractor()
-    private var oldQuotations: [Quotation] = []
     
     private var timer: Observable<Int>!
     private let timeInterval: Double = 5
     private var timerBag = DisposeBag()
+    
+    private let privateDataSource: Variable<[Section]> = Variable([])
+    let dataSource: Observable<[Section]>
 
     override init() {
+        self.dataSource = privateDataSource.asObservable()
         super.init()
         
         subscribeToEvents()
@@ -56,21 +59,7 @@ class TickerViewModel: CellArrayViewModel<QuotationCellViewModel> {
     
     private func filter(quotations: [Quotation]) {
         let sortedQuot = quotations.sorted(by: { $0.name < $1.name })
-        let sequenceDiff = oldQuotations.diff(with: sortedQuot, with: ==)
-        oldQuotations = sortedQuot
-        
-        if sequenceDiff.common.count == 0 && sequenceDiff.removed.count == 0 && sequenceDiff.inserted.count > 0 {
-            let cellViewModels = sequenceDiff.inserted.map({ QuotationCellViewModel(quotation: $0.1) })
-            self.cellViewModels.value = ObservableArray(cellViewModels)
-        } else if sequenceDiff.inserted.count > 0 || sequenceDiff.removed.count > 0 {
-            var cells = cellViewModels.value
-            for element in sequenceDiff.removed {
-                cells.remove(at: element.0)
-            }
-            for element in sequenceDiff.inserted {
-                cells.insert(QuotationCellViewModel(quotation: element.1), at: element.0)
-            }
-            cellViewModels.value = cells
-        }
+        let items = sortedQuot.map({ QuotationCellViewModel(quotation: $0) })
+        privateDataSource.value = [Section(header: "Quotations", items: items)]
     }
 }

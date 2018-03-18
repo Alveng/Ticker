@@ -43,4 +43,9 @@ extension BaseProvider where Self: TargetType {
     var headers: [String: String]? {
         return nil
     }
+    
+    static func moyaProvider() -> BaseRxMoyaProvider<Self> {
+        let provider = BaseRxMoyaProvider<Self>()
+        return provider
+    }
 }

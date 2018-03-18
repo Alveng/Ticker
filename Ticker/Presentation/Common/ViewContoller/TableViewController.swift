@@ -6,34 +6,30 @@
 //  Copyright © 2018 Sergey Klimov. All rights reserved.
 //
 
-import UIKit
+import SnapKit
 
 
-typealias CellMap = [String: String]
-
-protocol CellMapper {
-    var cellMap: CellMap { get }
-    func configureCellMap() -> CellMap
-}
-
-class TableViewController: ViewController, CellMapper {
+class TableViewController: ViewController {
     
-    @IBOutlet weak var tableView: UITableView!
-    
-    private (set) var cellMap: CellMap = [:]
+    lazy var tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureTableView()
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
         }
-        
-        cellMap = configureCellMap()
         tableView.tableFooterView = UIView(frame: .zero)
     }
     
-    func configureCellMap() -> CellMap {
-        preconditionFailure("\(#function) should be implemented in subclass")
+    private func configureTableView() {
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(self.topLayoutGuide.snp.bottom)
+            make.left.equalTo(view)
+            make.right.equalTo(view)
+            make.bottom.equalTo(view)
+        }
     }
 }

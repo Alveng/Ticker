@@ -6,32 +6,48 @@
 //  Copyright © 2018 Sergey Klimov. All rights reserved.
 //
 
-import UIKit
+import RxCocoa
+import RxSwift
+import RxDataSources
 
 
-class TickerViewController: TableViewController, ViewModelHolder, AutoBinder {
+class TickerViewController: TableViewController, ViewModelHolder {
 
     var viewModel: TickerViewModel? = TickerViewModel()
-    var dataSource: TableViewDataSource<TickerViewController>?
-    
+    private var dataSource: RxTableViewSectionedAnimatedDataSource<Section>?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        configureTableView()
+    }
+    
+    private func configureTableView() {
+        let cellIdentifier = QuotationTableViewCell.className()
+        tableView.register(QuotationTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 108
         
-        tableView.dataSource = TableViewDataSource(for: self, store: &dataSource)
-        subscribeToEvents()
-    }
-    
-    override func configureCellMap() -> CellMap {
-        return [
-            QuotationCellViewModel.className(): QuotationTableViewCell.className()
-        ]
-    }
-    
-    private func subscribeToEvents() {
-        viewModel?.cellViewModels
-            .asDriver()
-            .drive(onNext: { [weak self] (_) in
-                self?.tableView.reloadData()
-            }).disposed(by: disposeBag)
+        let dataSource = RxTableViewSectionedAnimatedDataSource<Section>(
+            animationConfiguration: AnimationConfiguration(insertAnimation: .right,
+                                                           reloadAnimation: .fade,
+                                                           deleteAnimation: .left),
+            configureCell: { ds, tv, ip, item in
+                guard let cell = tv.dequeueReusableCell(withIdentifier: cellIdentifier) as? QuotationTableViewCell else {
+                    return QuotationTableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+                }
+                
+                cell.viewModel = item
+                return cell
+            },
+            titleForHeaderInSection: { ds, index in
+                return ds.sectionModels[index].header
+        })
+        
+        self.dataSource = dataSource
+        
+        viewModel?.dataSource
+            .bind(to: tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
     }
 }

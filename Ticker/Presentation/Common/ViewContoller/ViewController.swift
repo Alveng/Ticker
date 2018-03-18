@@ -19,5 +19,7 @@ class ViewController: UIViewController {
         if let autobinder = self as? AutoBinder {
             autobinder.bindViewModel()
         }
+        
+        view.backgroundColor = .white
     }
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Sergey Klimov. All rights reserved.
 //
 
-protocol ViewModelHolder: class {
+protocol ViewModelHolder: class, AutoBinder {
     
     associatedtype VM: ViewModel
     

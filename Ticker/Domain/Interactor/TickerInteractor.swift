@@ -13,15 +13,12 @@ import Moya_ObjectMapper
 
 class TickerInteractor: Interactor<Void, [Quotation]> {
     
-    private let provider = MoyaProvider<TickerProvider>()
+    private let provider = TickerProvider.moyaProvider()
     
     override func asObservable(params: Void) -> Observable<[Quotation]> {
-        return provider.rx
+        return provider
             .request(.returnTicker)
-            .filter({ !$0.data.isEmpty })
-            .asObservable()
             .mapObject(QuotationList.self)
             .map({ $0.list })
-            .asObservable()
     }
 }

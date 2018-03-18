@@ -24,7 +24,7 @@ extension Interactor where Input: Any {
         Observable.just(params)
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
             .flatMap(asObservable)
-            .observeOn(MainScheduler.asyncInstance)
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: onNext, onError: onError, onCompleted: onCompleted)
             .disposed(by: disposeBag)
     }

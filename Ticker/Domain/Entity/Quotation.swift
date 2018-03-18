@@ -7,6 +7,7 @@
 //
 
 import ObjectMapper
+import RxDataSources
 
 
 struct Quotation {
@@ -43,9 +44,16 @@ extension Quotation: Mappable {
     }
 }
 
-extension Quotation: Equatable {
+extension Quotation: Equatable, IdentifiableType {
     
     static func ==(lhs: Quotation, rhs: Quotation) -> Bool {
         return lhs.name == rhs.name
+            && lhs.last == rhs.last
+            && lhs.highestBid == rhs.highestBid
+            && lhs.percentChange == rhs.percentChange
+    }
+    
+    var identity: String {
+        return name + last + highestBid + percentChange
     }
 }

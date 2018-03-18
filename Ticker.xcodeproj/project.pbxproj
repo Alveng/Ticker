@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44CB1734205C040C00A51DF5 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB1733205C040C00A51DF5 /* Section.swift */; };
+		44CB1737205E309400A51DF5 /* MainStoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB1736205E309400A51DF5 /* MainStoryBuilder.swift */; };
+		44CB1739205E61B300A51DF5 /* BaseRxMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB1738205E61B300A51DF5 /* BaseRxMoyaProvider.swift */; };
 		44CE0002205991A000448B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0001205991A000448B7A /* AppDelegate.swift */; };
 		44CE0004205991A000448B7A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0003205991A000448B7A /* TabBarViewController.swift */; };
-		44CE0007205991A000448B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CE0005205991A000448B7A /* Main.storyboard */; };
 		44CE0009205991A000448B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CE0008205991A000448B7A /* Assets.xcassets */; };
 		44CE000C205991A000448B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CE000A205991A000448B7A /* LaunchScreen.storyboard */; };
 		44CE001A2059937500448B7A /* TickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE00192059937500448B7A /* TickerViewController.swift */; };
@@ -22,34 +24,27 @@
 		44CE002E205999AD00448B7A /* Quotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE002D205999AD00448B7A /* Quotation.swift */; };
 		44CE003120599F6400448B7A /* TickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE003020599F6400448B7A /* TickerViewModel.swift */; };
 		44CE00332059A1A300448B7A /* QuotationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE00322059A1A300448B7A /* QuotationList.swift */; };
-		44CE00362059A26900448B7A /* TC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE00352059A26900448B7A /* TC+UITableView.swift */; };
 		44CE00392059A3EB00448B7A /* QuotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE00382059A3EB00448B7A /* QuotationTableViewCell.swift */; };
-		44CE003B2059A3FF00448B7A /* QuotationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44CE003A2059A3FF00448B7A /* QuotationTableViewCell.xib */; };
 		44CE003F205A27AC00448B7A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE003E205A27AC00448B7A /* TableViewController.swift */; };
-		44CE0042205A286600448B7A /* ViewModelHolderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0041205A286600448B7A /* ViewModelHolderDataSource.swift */; };
 		44CE0045205A28DA00448B7A /* ViewModelHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0044205A28DA00448B7A /* ViewModelHolder.swift */; };
 		44CE0048205A29A100448B7A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0047205A29A100448B7A /* ViewModel.swift */; };
-		44CE004A205A2A0C00448B7A /* CellArrayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0049205A2A0C00448B7A /* CellArrayViewModel.swift */; };
 		44CE004C205A2B2300448B7A /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE004B205A2B2300448B7A /* CellViewModel.swift */; };
-		44CE004E205A2BBC00448B7A /* ViewModelHolderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE004D205A2BBC00448B7A /* ViewModelHolderContainer.swift */; };
 		44CE0050205A2C0C00448B7A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE004F205A2C0C00448B7A /* TableViewCell.swift */; };
 		44CE0054205A49FB00448B7A /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0053205A49FB00448B7A /* Binder.swift */; };
 		44CE0057205A4A7C00448B7A /* QuotationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0056205A4A7C00448B7A /* QuotationCellViewModel.swift */; };
 		44CE0059205A4ACA00448B7A /* TC+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0058205A4ACA00448B7A /* TC+NSObject.swift */; };
-		44CE005B205A4B3100448B7A /* CellBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE005A205A4B3100448B7A /* CellBinder.swift */; };
 		44CE005D205A4B9000448B7A /* ViewControllerBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE005C205A4B9000448B7A /* ViewControllerBinder.swift */; };
 		44CE005F205A4DAF00448B7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE005E205A4DAF00448B7A /* ViewController.swift */; };
-		44CE0061205A4E3900448B7A /* TableViewControllerBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0060205A4E3900448B7A /* TableViewControllerBinder.swift */; };
-		44CE0065205B9BDD00448B7A /* TC+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0064205B9BDD00448B7A /* TC+Array.swift */; };
-		44CE0067205B9C0B00448B7A /* SequenceDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE0066205B9C0B00448B7A /* SequenceDiff.swift */; };
 		EF9D6BF3CC64E5A4B1DF7524 /* Pods_Ticker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE4177B12817F4E58E2A101 /* Pods_Ticker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C33E4D4531632A6BD2A129B /* Pods-Ticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ticker/Pods-Ticker.debug.xcconfig"; sourceTree = "<group>"; };
+		44CB1733205C040C00A51DF5 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		44CB1736205E309400A51DF5 /* MainStoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryBuilder.swift; sourceTree = "<group>"; };
+		44CB1738205E61B300A51DF5 /* BaseRxMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRxMoyaProvider.swift; sourceTree = "<group>"; };
 		44CE0001205991A000448B7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44CE0003205991A000448B7A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		44CE0006205991A000448B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44CE0008205991A000448B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44CE000B205991A000448B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44CE000D205991A000448B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,26 +58,17 @@
 		44CE002D205999AD00448B7A /* Quotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotation.swift; sourceTree = "<group>"; };
 		44CE003020599F6400448B7A /* TickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewModel.swift; sourceTree = "<group>"; };
 		44CE00322059A1A300448B7A /* QuotationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationList.swift; sourceTree = "<group>"; };
-		44CE00352059A26900448B7A /* TC+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TC+UITableView.swift"; sourceTree = "<group>"; };
 		44CE00382059A3EB00448B7A /* QuotationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationTableViewCell.swift; sourceTree = "<group>"; };
-		44CE003A2059A3FF00448B7A /* QuotationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotationTableViewCell.xib; sourceTree = "<group>"; };
 		44CE003E205A27AC00448B7A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		44CE0041205A286600448B7A /* ViewModelHolderDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelHolderDataSource.swift; sourceTree = "<group>"; };
 		44CE0044205A28DA00448B7A /* ViewModelHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelHolder.swift; sourceTree = "<group>"; };
 		44CE0047205A29A100448B7A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		44CE0049205A2A0C00448B7A /* CellArrayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellArrayViewModel.swift; sourceTree = "<group>"; };
 		44CE004B205A2B2300448B7A /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
-		44CE004D205A2BBC00448B7A /* ViewModelHolderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelHolderContainer.swift; sourceTree = "<group>"; };
 		44CE004F205A2C0C00448B7A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		44CE0053205A49FB00448B7A /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
 		44CE0056205A4A7C00448B7A /* QuotationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationCellViewModel.swift; sourceTree = "<group>"; };
 		44CE0058205A4ACA00448B7A /* TC+NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TC+NSObject.swift"; sourceTree = "<group>"; };
-		44CE005A205A4B3100448B7A /* CellBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBinder.swift; sourceTree = "<group>"; };
 		44CE005C205A4B9000448B7A /* ViewControllerBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBinder.swift; sourceTree = "<group>"; };
 		44CE005E205A4DAF00448B7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		44CE0060205A4E3900448B7A /* TableViewControllerBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerBinder.swift; sourceTree = "<group>"; };
-		44CE0064205B9BDD00448B7A /* TC+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TC+Array.swift"; sourceTree = "<group>"; };
-		44CE0066205B9C0B00448B7A /* SequenceDiff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceDiff.swift; sourceTree = "<group>"; };
 		44CEFFFE205991A000448B7A /* Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20494E27357907AC9F82387 /* Pods-Ticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ticker/Pods-Ticker.release.xcconfig"; sourceTree = "<group>"; };
 		FDE4177B12817F4E58E2A101 /* Pods_Ticker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44CB1735205E307B00A51DF5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				44CB1736205E309400A51DF5 /* MainStoryBuilder.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		44CE0000205991A000448B7A /* Ticker */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,10 +129,10 @@
 		44CE00152059927700448B7A /* Main Story */ = {
 			isa = PBXGroup;
 			children = (
+				44CB1735205E307B00A51DF5 /* Helper */,
 				44CE00372059A3D100448B7A /* View */,
 				44CE002F20599F5600448B7A /* ViewModel */,
 				44CE00142059926900448B7A /* ViewController */,
-				44CE0005205991A000448B7A /* Main.storyboard */,
 			);
 			path = "Main Story";
 			sourceTree = "<group>";
@@ -190,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				44CE00222059962700448B7A /* BaseProvider.swift */,
+				44CB1738205E61B300A51DF5 /* BaseRxMoyaProvider.swift */,
 				44CE00242059968B00448B7A /* TickerProvider.swift */,
 			);
 			path = Providers;
@@ -209,7 +204,7 @@
 			children = (
 				44CE00322059A1A300448B7A /* QuotationList.swift */,
 				44CE002D205999AD00448B7A /* Quotation.swift */,
-				44CE0066205B9C0B00448B7A /* SequenceDiff.swift */,
+				44CB1733205C040C00A51DF5 /* Section.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -235,9 +230,7 @@
 		44CE00342059A24100448B7A /* Extenstion */ = {
 			isa = PBXGroup;
 			children = (
-				44CE00352059A26900448B7A /* TC+UITableView.swift */,
 				44CE0058205A4ACA00448B7A /* TC+NSObject.swift */,
-				44CE0064205B9BDD00448B7A /* TC+Array.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -246,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				44CE00382059A3EB00448B7A /* QuotationTableViewCell.swift */,
-				44CE003A2059A3FF00448B7A /* QuotationTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,8 +276,6 @@
 			isa = PBXGroup;
 			children = (
 				44CE0044205A28DA00448B7A /* ViewModelHolder.swift */,
-				44CE004D205A2BBC00448B7A /* ViewModelHolderContainer.swift */,
-				44CE0041205A286600448B7A /* ViewModelHolderDataSource.swift */,
 			);
 			path = ViewModelHolder;
 			sourceTree = "<group>";
@@ -294,7 +284,6 @@
 			isa = PBXGroup;
 			children = (
 				44CE0047205A29A100448B7A /* ViewModel.swift */,
-				44CE0049205A2A0C00448B7A /* CellArrayViewModel.swift */,
 				44CE004B205A2B2300448B7A /* CellViewModel.swift */,
 			);
 			path = ViewModel;
@@ -312,9 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				44CE0053205A49FB00448B7A /* Binder.swift */,
-				44CE005A205A4B3100448B7A /* CellBinder.swift */,
 				44CE005C205A4B9000448B7A /* ViewControllerBinder.swift */,
-				44CE0060205A4E3900448B7A /* TableViewControllerBinder.swift */,
 			);
 			path = Binder;
 			sourceTree = "<group>";
@@ -426,8 +413,6 @@
 			files = (
 				44CE000C205991A000448B7A /* LaunchScreen.storyboard in Resources */,
 				44CE0009205991A000448B7A /* Assets.xcassets in Resources */,
-				44CE003B2059A3FF00448B7A /* QuotationTableViewCell.xib in Resources */,
-				44CE0007205991A000448B7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,26 +442,30 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ticker/Pods-Ticker-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObservableArray-RxSwift/ObservableArray_RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxViewModel/RxViewModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObservableArray_RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxViewModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -508,21 +497,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44CE004E205A2BBC00448B7A /* ViewModelHolderContainer.swift in Sources */,
 				44CE0021205994EF00448B7A /* Constants.swift in Sources */,
 				44CE00252059968B00448B7A /* TickerProvider.swift in Sources */,
-				44CE005B205A4B3100448B7A /* CellBinder.swift in Sources */,
 				44CE00332059A1A300448B7A /* QuotationList.swift in Sources */,
 				44CE0004205991A000448B7A /* TabBarViewController.swift in Sources */,
-				44CE00362059A26900448B7A /* TC+UITableView.swift in Sources */,
 				44CE0002205991A000448B7A /* AppDelegate.swift in Sources */,
-				44CE0065205B9BDD00448B7A /* TC+Array.swift in Sources */,
 				44CE002E205999AD00448B7A /* Quotation.swift in Sources */,
 				44CE001C205993A500448B7A /* EmptyViewController.swift in Sources */,
+				44CB1734205C040C00A51DF5 /* Section.swift in Sources */,
 				44CE00392059A3EB00448B7A /* QuotationTableViewCell.swift in Sources */,
-				44CE0061205A4E3900448B7A /* TableViewControllerBinder.swift in Sources */,
 				44CE0059205A4ACA00448B7A /* TC+NSObject.swift in Sources */,
 				44CE0045205A28DA00448B7A /* ViewModelHolder.swift in Sources */,
+				44CB1739205E61B300A51DF5 /* BaseRxMoyaProvider.swift in Sources */,
 				44CE004C205A2B2300448B7A /* CellViewModel.swift in Sources */,
 				44CE0048205A29A100448B7A /* ViewModel.swift in Sources */,
 				44CE002A2059983300448B7A /* BaseInteractor.swift in Sources */,
@@ -530,29 +516,19 @@
 				44CE001A2059937500448B7A /* TickerViewController.swift in Sources */,
 				44CE005F205A4DAF00448B7A /* ViewController.swift in Sources */,
 				44CE0057205A4A7C00448B7A /* QuotationCellViewModel.swift in Sources */,
+				44CB1737205E309400A51DF5 /* MainStoryBuilder.swift in Sources */,
 				44CE00232059962700448B7A /* BaseProvider.swift in Sources */,
 				44CE002C205998D300448B7A /* TickerInteractor.swift in Sources */,
 				44CE0054205A49FB00448B7A /* Binder.swift in Sources */,
 				44CE0050205A2C0C00448B7A /* TableViewCell.swift in Sources */,
 				44CE003F205A27AC00448B7A /* TableViewController.swift in Sources */,
-				44CE004A205A2A0C00448B7A /* CellArrayViewModel.swift in Sources */,
 				44CE003120599F6400448B7A /* TickerViewModel.swift in Sources */,
-				44CE0042205A286600448B7A /* ViewModelHolderDataSource.swift in Sources */,
-				44CE0067205B9C0B00448B7A /* SequenceDiff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		44CE0005205991A000448B7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44CE0006205991A000448B7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44CE000A205991A000448B7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -679,6 +655,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHYNL9H4B9;
 				INFOPLIST_FILE = "$(SRCROOT)/Ticker/Other/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.sklimov.Ticker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -695,6 +672,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHYNL9H4B9;
 				INFOPLIST_FILE = "$(SRCROOT)/Ticker/Other/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.sklimov.Ticker;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.6.0)
+  - Differentiator (3.0.2)
   - Moya (10.0.2):
     - Moya/Core (= 10.0.2)
   - Moya-ObjectMapper/Core (2.5):
@@ -16,34 +17,40 @@ PODS:
     - Moya/Core
     - RxSwift (~> 4.0)
   - ObjectMapper (3.0.0)
-  - ObservableArray-RxSwift (0.2.0):
-    - RxSwift (~> 4.0)
   - Result (3.2.4)
   - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - RxViewModel (5.1.0):
     - RxSwift (~> 4.0)
+  - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - Moya-ObjectMapper/RxSwift
   - Moya/RxSwift
-  - ObservableArray-RxSwift
   - RxCocoa
+  - RxDataSources
   - RxSwift
   - RxViewModel
+  - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Moya: 2b0531a9fef318e0bc484030c3db1e6f279ccb66
   Moya-ObjectMapper: 167adf69db0298bf3a19ea05cb9a16ee117c8ef5
   ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
-  ObservableArray-RxSwift: 905a088f51b1653f7eb55e6887f8a13916618f50
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   RxViewModel: fb8b3f73dafb72f1fd02af2fb48e97f0133a838d
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: f0240dc658a6b192d73ae1ba750af0abfeb90ab9
+PODFILE CHECKSUM: fbc80aa6a6d7e85e1309e97ced4e7053006a8cdb
 
 COCOAPODS: 1.3.1
